@@ -20,9 +20,7 @@
 
 
         }
-        .work {
-
-        }
+     
         .card-header {
             background-color: rgba(0,0,0,0);
         }   
@@ -41,7 +39,24 @@
             margin-right: 10px;
             background-color:lightblue;
         }
+        .hiden-item{
+            display:none;
+        }
+        .panel-0{       
+            display:none;
+        }
+        .panel-1{
+    
+            background-color:#7173a6;
+            display:none;
 
+        }
+        .panel-active{
+            display:block;
+        }
+        .work {
+
+        }
     </style>
 </head>
 <body>
@@ -59,7 +74,7 @@
                 <div class="card-header">
                     <ul class="nav nav-pills card-header-pills">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">人物</a>
+                            <a class="nav-link active"   href="#">人物</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">背景</a>
@@ -68,12 +83,12 @@
                             <a class="nav-link" href="#">動畫原畫</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" href="#">練習</a>
+                            <a class="nav-link" disabled" href="#">練習</a>
                         </li>
                     </ul>
                 </div>
                 <div class="card-body">
-                    <div class="bd-example">
+                    <div class="bd-example panel-0 panel-active " >
                         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                             <ol class="carousel-indicators">
                                 <li data-target="#carouselExampleCaptions" data-slide-to="0" class=""></li>
@@ -82,24 +97,28 @@
                             </ol>
                             <div class="carousel-inner">
                                 <div class="carousel-item">
-                                    <img class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" src="img/01-1.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: First slide"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#555" dy=".3em">First slide</text></svg>
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>First slide label</h5>.
-                                        <p>Nulla vitae elit libero, a pharetra augue mollis interdu</p>
+                                    <img class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" src="img/01-1.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: First slide"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#555" dy=".3em"></text></svg>
+                                    <div class="carousel-caption d-none d-md-block">    
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" src="img/01-2.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Second slide"><title>Placeholder</title><rect width="100%" height="100%" fill="#666"></rect><text x="50%" y="50%" fill="#444" dy=".3em">Second slide</text></svg>
+                                    <img class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" src="img/01-2.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Second slide"><title>Placeholder</title><rect width="100%" height="100%" fill="#666"></rect><text x="50%" y="50%" fill="#444" dy=".3em"></text></svg>
                                     <div class="carousel-caption d-none d-md-block">
-                                        <h5>Second slide label</h5>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" src="img/page01.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Second slide"><title>Placeholder</title><rect width="100%" height="100%" fill="#666"></rect><text x="50%" y="50%" fill="#444" dy=".3em"></text></svg>
+                                    <div class="carousel-caption d-none d-md-block">
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" src="img/水墨.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Second slide"><title>Placeholder</title><rect width="100%" height="100%" fill="#666"></rect><text x="50%" y="50%" fill="#444" dy=".3em"></text></svg>
+                                    <div class="carousel-caption d-none d-md-block">
                                     </div>
                                 </div>
                                 <div class="carousel-item active">
-                                    <img class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" min-width="800" height="400" src="img/02.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Third slide"><title>Placeholder</title><rect width="100%" height="100%" fill="#555"></rect><text x="50%" y="50%" fill="#333" dy=".3em">Third slide</text></svg>
+                                    <img class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" min-width="800" height="400" src="img/02.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Third slide"><title>Placeholder</title><rect width="100%" height="100%" fill="#555"></rect><text x="50%" y="50%" fill="#333" dy=".3em"></text></svg>
                                     <div class="carousel-caption d-none d-md-block">
-                                        <h5>Third slide label</h5>
-                                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                                     </div>
                                 </div>
                             </div>
@@ -112,6 +131,46 @@
                                 <span class="sr-only">Next</span>
                             </a>
                         </div>
+                    </div>
+                    <div  class="bd-example  panel-1 rounded">
+                        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleCaptions" data-slide-to="0" class=""></li>
+                                <li data-target="#carouselExampleCaptions" data-slide-to="1" class=""></li>
+                                <li data-target="#carouselExampleCaptions" data-slide-to="2" class="active"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item">
+                                    <img class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" src="img/背景02.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: First slide"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#555" dy=".3em"></text></svg>
+                                    <div class="carousel-caption d-none d-md-block">    
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" src="img/背景.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Second slide"><title>Placeholder</title><rect width="100%" height="100%" fill="#666"></rect><text x="50%" y="50%" fill="#444" dy=".3em"></text></svg>
+                                    <div class="carousel-caption d-none d-md-block">
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" src="img/03.PNG" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Second slide"><title>Placeholder</title><rect width="100%" height="100%" fill="#666"></rect><text x="50%" y="50%" fill="#444" dy=".3em"></text></svg>
+                                    <div class="carousel-caption d-none d-md-block">
+                                    </div>
+                                </div>
+                                <div class="carousel-item active">
+                                    <img class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" min-width="800" height="400" src="img/01-4.png" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Third slide"><title>Placeholder</title><rect width="100%" height="100%" fill="#555"></rect><text x="50%" y="50%" fill="#333" dy=".3em"></text></svg>
+                                    <div class="carousel-caption d-none d-md-block">
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -132,8 +191,29 @@
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script>
+    $('.panel-1 .carousel-control-next').click(function(){
+        
+
+    });
+    $( ".nav-link" ).each(function( index ) {
+        var setVal = 'panel-'+ index;
+        $(this).data('slide',setVal);
+    });
+    $( ".nav-link" ).click(function() {
+        //nar bar 
+        $('.nav-link').removeClass('active');
+        $(this).addClass( 'active');
+        //panel 
+        $('.panel-active').removeClass('panel-active');
+        //目標物
+        var taget  = "." +  $(this).data('slide');
+        $(taget).addClass('panel-active');
+    });
+</script>
 </body>
 </html>
